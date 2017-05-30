@@ -1,3 +1,13 @@
 <resources>
     <string name="app_name">Horezu</string>
+    <string name="location_stejari">Location: Stejari Plateau Town Horezu</string>
+    <string name="duration">On the first Saturday and Sunday of June</string>
+    <string name="event">Main event: The Cock of Horezu festival</string>
+    <string name="link_event">http://horezu-turism.ro/targul-de-ceramica-populara-romaneasca-cocosul-de-hurez</string>
+    <string name="description">Description:The most famous decorative figure is the Horezu rooster, a symbol of soul resurrection and immortality, of light and power over the forces of darkness.
+    And each year, in the first week of June, this beloved figure is proudly celebrated in a festival suggestively named the Horezu Rooster.
+    There are other traditional symbols. The Tree of Life symbolizes the eternal youth and abundance.
+    The Bird represents the souls’ guide after death. The Lost Path makes reference to the trip a soul makes until reaches the other realm.
+    The Flower symbolizes joy and happiness. But the diversity of the symbols is far much greater especially because pottery vessels played an important role both in wedding and funeral ceremonies.
+    That’s why on Horezu pottery you will also see many old Christian symbols like the cross, the snake, the vine, the spring and the star.</string>
 </resources>

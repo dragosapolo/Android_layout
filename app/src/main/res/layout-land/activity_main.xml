@@ -8,16 +8,14 @@
     android:paddingLeft="16dp"
     android:paddingRight="16dp"
     android:paddingTop="16dp"
-
     tools:context="com.example.android.horezu.MainActivity">
 
 
     <ImageView
+        style="?android:attr/buttonBarButtonStyle"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:src="@drawable/pottery"
-        style="?android:attr/buttonBarButtonStyle"/>
-
+        android:src="@drawable/pottery" />
 
 
     <LinearLayout
@@ -27,44 +25,46 @@
         android:orientation="horizontal">
 
         <TextView
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            style="?android:attr/buttonBarButtonStyle"
-            android:text="Tradition"
-            android:layout_weight="1"
             android:id="@+id/text1"
-            android:textColor="#03A9F4" />
-
-        <View android:layout_height="fill_parent"
-            android:layout_width="1px"
-            android:background="@color/blue"
-            android:layout_marginBottom="8dp"
-            android:layout_marginTop="8dp"
-            android:id="@+id/view1" />
-
-        <TextView
+            style="?android:attr/buttonBarButtonStyle"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            style="?android:attr/buttonBarButtonStyle"
-            android:text="Handicraft"
             android:layout_weight="1"
+            android:text="Tradition"
+            android:textColor="#03A9F4" />
+
+        <View
+            android:id="@+id/view1"
+            android:layout_width="1px"
+            android:layout_height="fill_parent"
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="8dp"
+            android:background="@color/blue" />
+
+        <TextView
             android:id="@+id/text2"
-            android:textColor="#03A9F4" />
-
-        <View android:layout_height="fill_parent"
-            android:layout_width="1px"
-            android:background="@color/blue"
-            android:layout_marginBottom="8dp"
-            android:layout_marginTop="8dp"
-            android:id="@+id/view2" />
-
-        <TextView
+            style="?android:attr/buttonBarButtonStyle"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            style="?android:attr/buttonBarButtonStyle"
-            android:text="Pottery"
             android:layout_weight="1"
+            android:text="Handicraft"
+            android:textColor="#03A9F4" />
+
+        <View
+            android:id="@+id/view2"
+            android:layout_width="1px"
+            android:layout_height="fill_parent"
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="8dp"
+            android:background="@color/blue" />
+
+        <TextView
             android:id="@+id/text3"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Pottery"
             android:textColor="#03A9F4" />
 
     </LinearLayout>
@@ -73,51 +73,53 @@
     <LinearLayout
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:adjustViewBounds="true"
-        android:orientation="horizontal"
         android:layout_alignParentBottom="true"
         android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true">
+        android:layout_alignParentStart="true"
+        android:adjustViewBounds="true"
+        android:orientation="horizontal">
 
         <TextView
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            style="?android:attr/buttonBarButtonStyle"
-            android:text="Heritage"
-            android:layout_weight="1"
             android:id="@+id/text4"
-            android:textColor="#03A9F4" />
-
-        <View android:layout_height="fill_parent"
-            android:layout_width="1px"
-            android:background="@color/blue"
-            android:layout_marginBottom="8dp"
-            android:layout_marginTop="8dp"
-            android:id="@+id/view3" />
-
-        <TextView
+            style="?android:attr/buttonBarButtonStyle"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            style="?android:attr/buttonBarButtonStyle"
-            android:text="Creation"
             android:layout_weight="1"
+            android:text="Heritage"
+            android:textColor="#03A9F4" />
+
+        <View
+            android:id="@+id/view3"
+            android:layout_width="1px"
+            android:layout_height="fill_parent"
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="8dp"
+            android:background="@color/blue" />
+
+        <TextView
             android:id="@+id/text5"
-            android:textColor="#03A9F4" />
-
-        <View android:layout_height="fill_parent"
-            android:layout_width="1px"
-            android:background="@color/blue"
-            android:layout_marginBottom="8dp"
-            android:layout_marginTop="8dp"
-            android:id="@+id/view4" />
-
-        <TextView
+            style="?android:attr/buttonBarButtonStyle"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            style="?android:attr/buttonBarButtonStyle"
-            android:text="Emotion"
             android:layout_weight="1"
+            android:text="Creation"
+            android:textColor="#03A9F4" />
+
+        <View
+            android:id="@+id/view4"
+            android:layout_width="1px"
+            android:layout_height="fill_parent"
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="8dp"
+            android:background="@color/blue" />
+
+        <TextView
             android:id="@+id/text6"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Emotion"
             android:textColor="#03A9F4" />
 
     </LinearLayout>

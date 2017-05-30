@@ -10,71 +10,87 @@
     tools:context="com.example.android.horezu.MainActivity">
 
     <RelativeLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content">
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
 
         <ImageView
-            android:id="@+id/view"
+            android:id="@+id/horezuimg"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:adjustViewBounds="true"
             android:src="@drawable/pottery" />
 
-        <ImageView
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"/>
-
         <LinearLayout
-            android:layout_width="fill_parent"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_below="@id/view"
+            android:layout_below="@id/horezuimg"
             android:orientation="vertical">
 
             <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
                 android:layout_marginLeft="16dp"
-                android:layout_marginTop="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_weight="1"
                 android:elegantTextHeight="true"
-                android:text="Main event: The Cock of Horezu festival"
+                android:gravity="start"
+                android:text="@string/event"
                 android:textColor="#01579B"
-                android:textSize="20sp" />
+                android:textSize="16sp" />
 
             <TextView
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="0dp"
                 android:layout_marginLeft="16dp"
-                android:layout_marginTop="16dp"
-                android:gravity="center"
-                android:text="On the first Saturday and Sunday of June"
+                android:layout_marginTop="8dp"
+                android:layout_weight="1"
+                android:gravity="start"
+                android:text="@string/duration"
                 android:textColor="#0288D1"
                 android:textSize="14sp" />
 
             <TextView
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="0dp"
                 android:layout_marginLeft="16dp"
-                android:layout_marginTop="16dp"
-                android:gravity="center"
-                android:text="Location: Stejari Plateu Town Horezu"
+                android:layout_marginTop="8dp"
+                android:layout_weight="1"
+                android:text="@string/location_stejari"
                 android:textColor="#0277BD"
-                android:textSize="16sp" />
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:layout_marginTop="16dp"
-                android:autoLink="web"
-                android:gravity="center"
-                android:text="http://www.horezu-infoturism.ro/EN/traditional-festivals-and-manifestations-in-the-horezu-area"
                 android:textSize="14sp" />
 
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_marginBottom="12dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_weight="2"
+                android:autoLink="web"
+                android:ellipsize="middle"
+                android:text="@string/link_event"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/verticalscrool"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_marginBottom="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_weight="1"
+                android:ellipsize="marquee"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:marqueeRepeatLimit="marquee_forever"
+                android:scrollHorizontally="true"
+                android:scrollbars="horizontal"
+                android:singleLine="true"
+                android:text="@string/description"
+                android:textSize="16sp" />
         </LinearLayout>
 
     </RelativeLayout>
-
 
     <LinearLayout
         android:layout_width="fill_parent"
@@ -93,11 +109,11 @@
             android:gravity="center"
             android:text="Heritage"
             android:textAllCaps="true"
-            android:textColor="#4527A0" />
+            android:textColor="@color/purple" />
 
         <View
             android:id="@+id/view3"
-            android:layout_width="2px"
+            android:layout_width="2dp"
             android:layout_height="fill_parent"
             android:background="@color/blue" />
 
@@ -109,11 +125,11 @@
             android:gravity="center"
             android:text="Creation"
             android:textAllCaps="true"
-            android:textColor="#4527A0" />
+            android:textColor="@color/purple" />
 
         <View
             android:id="@+id/view4"
-            android:layout_width="2px"
+            android:layout_width="2dp"
             android:layout_height="fill_parent"
             android:background="@color/blue" />
 
@@ -125,12 +141,12 @@
             android:gravity="center"
             android:text="Emotion"
             android:textAllCaps="true"
-            android:textColor="#4527A0" />
+            android:textColor="@color/purple" />
 
     </LinearLayout>
 
     <LinearLayout
-        android:layout_width="fill_parent"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
@@ -147,11 +163,11 @@
             android:gravity="center"
             android:text="Tradition"
             android:textAllCaps="true"
-            android:textColor="#4527A0" />
+            android:textColor="@color/purple" />
 
         <View
             android:id="@+id/view1"
-            android:layout_width="2px"
+            android:layout_width="2dp"
             android:layout_height="fill_parent"
             android:layout_marginTop="8dp"
             android:background="@color/blue" />
@@ -165,14 +181,13 @@
             android:gravity="center"
             android:text="Handicraft"
             android:textAllCaps="true"
-            android:textColor="#4527A0" />
+            android:textColor="@color/purple" />
 
         <View
             android:id="@+id/view2"
-            android:layout_width="2px"
+            android:layout_width="2dp"
             android:layout_height="fill_parent"
             android:layout_marginTop="8dp"
-
             android:background="@color/blue" />
 
         <TextView
@@ -184,9 +199,7 @@
             android:gravity="center"
             android:text="Pottery"
             android:textAllCaps="true"
-            android:textColor="#4527A0" />
-
+            android:textColor="@color/purple" />
     </LinearLayout>
-
 
 </RelativeLayout>
